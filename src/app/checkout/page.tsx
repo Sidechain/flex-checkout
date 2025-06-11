@@ -72,7 +72,7 @@ const CheckoutPage: React.FC = () => {
         <h1 className="text-3xl font-bold mb-8 text-center md:text-left text-neutral-900">Checkout</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column: Choices */}
-          <div className="relative overflow-hidden min-h-[200px]"> {/* Parent for animations. Adjust min-h as needed */}
+          <div className="relative overflow-hidden min-h-[200px]"> 
             {/* Initial Choices View */}
             <div
               className={`transition-all duration-500 ease-in-out transform space-y-4
@@ -170,16 +170,12 @@ const CheckoutPage: React.FC = () => {
                 </div>
 
                 {/* Section 3: Oister SIM (Conditional & Animated) */}
-                {/* This div will control the animation for the Oister section */}
                 <div
                   className={`transition-all duration-300 ease-in-out overflow-hidden ${
                     simSelected ? 'max-h-[150px] opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
-                  {/* The HR and content are now inside the animated container */}
-                  {/* The parent div's space-y-4 will provide top margin to this block when visible */}
-                  {/* Adding pt-4 to the inner content div for spacing after the hr */}
-                  <div className="pt-4"> {/* This div receives top padding from parent's space-y-4 if hr is removed, or provides padding itself */}
+                  <div className="pt-4"> 
                     <hr className="border-neutral-300" />
                     <div className="flex items-center justify-between pt-4"> {/* Spacing between HR and content */}
                       <div className="flex items-center space-x-3">
